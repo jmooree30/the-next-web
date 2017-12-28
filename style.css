@@ -3,13 +3,16 @@
 }
 
 body{
+	max-width: 100%;
 	height: 100%;
 	margin:0;
 	padding:0;
 }
 
 .container{
+	max-width: 100%;
 	position: relative;
+	height:100%;
 }
 
 header{
@@ -26,6 +29,7 @@ header{
 }
 
 .header-2{
+	z-index:2;
 	position: fixed;
 	width: 100%;
 	background:white;
@@ -45,13 +49,79 @@ header{
 	font-family: Shentox,sans-serif;
 	color: black;
 	font-weight: 500;
+}
+
+.col{
+	z-index: 0;
+	position: relative;
+	margin-top: 80px;
+	width: 100%;
+	float:left;
+}
+
+.row-l{
+	position: absolute;
+	left: 0;
+	top:0;
+	width:60%;
+	height:409px;
+}
+
+.text{
+	position: absolute;
+	color: white;
+	top:300px;
+	left:0;
+	z-index:1;
+	width:60%;
+	text-align: center;
+	font-size:30px;
+	max-height: 100%;
+	font-family: 'Bungee', cursive;
+}
+.text-2{
+	position: absolute;
+	color: white;
+	top:150px;
+	right:0;
+	z-index:1;
+	width:40%;
+	text-align: center;
+	font-size:20px;
+	max-height: 100%;
+	font-family: 'Bungee', cursive;
+}
+
+.text-3{
+	position: absolute;
+	color: white;
+	top:350px;
+	right:0;
+	z-index:1;
+	width:40%;
+	text-align: center;
+	font-size:20px;
+	max-height: 100%;
+	font-family: 'Bungee', cursive;
+}
+
+.row-r{
+	position: absolute;
+	width:40%;
+	height: 200px;
+	top:0;
+	right: 0;
+}
+
+.row-r-2{
+	position: absolute;
+	right:0;
+	top:200px;
+	width:40%;
+	height: 209px;
 	
 }
 
-.row-1-col-1{
-	width:75%;
-	float: left;
-}
 
 a{
 	color: rgba(255,255,255,.6);
@@ -68,10 +138,21 @@ a:hover{
 	display: none;
 }
 
-@media only screen and (max-width: 767px) {
+#search{
+	display: none;
+}
+
+@media only screen and (max-width: 850px) {
   header{display: none}
   a[class^="header-2-links"]{display: none;}
   i[class^="fa"]{display: none;}
   .header-2{padding:0; position:fixed; height: 50px;}
   .media{display: inline; height:50px; width:50px; position: relative; bottom:0;}
+  #search{display:inline; float: right;position: relative; top:15px;}
+  .row-l{width:100%;position: static;}
+  .row-r{width:100%; position:static;}
+  .row-r-2{width:100%; position: static;}
+  .text{font-size: 24px; width:100%;}
+  .text-2{font-size: 20px; width:100%; top:540px;}
+  .text-3{font-size: 20px; width:100%; top:750px;}
 }
