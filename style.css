@@ -10,27 +10,15 @@ body{
 }
 
 .container{
+	background: blue;
 	max-width: 100%;
 	position: relative;
-	height:100%;
-}
-
-header{
-	max-width: 100%;
-	background: black;
-	padding: 10px;
-	color: white;
-}
-
-.header-r{
-	float:right;
-	padding:0 5px;
-	font-size: 14px;
 }
 
 .header-2{
-	z-index:2;
 	position: fixed;
+	top:0;
+	z-index:2;
 	width: 100%;
 	background:white;
 	padding:20px;
@@ -52,9 +40,9 @@ header{
 }
 
 .col{
+	top:80px;
 	z-index: 0;
 	position: relative;
-	margin-top: 80px;
 	width: 100%;
 	float:left;
 }
@@ -82,7 +70,7 @@ header{
 .text-2{
 	position: absolute;
 	color: white;
-	top:150px;
+	top:140px;
 	right:0;
 	z-index:1;
 	width:40%;
@@ -111,9 +99,12 @@ header{
 	height: 200px;
 	top:0;
 	right: 0;
+	padding-left: 10px;
+	padding-bottom: 10px;
 }
 
 .row-r-2{
+	padding-left: 10px;
 	position: absolute;
 	right:0;
 	top:200px;
@@ -122,6 +113,62 @@ header{
 	
 }
 
+.container-2{
+	position: relative;
+	top:520px;
+	width: 100%;
+}
+
+.news{
+	color: #F42;
+	font-family: Avalon,sans-serif;
+	font-size:30px;
+	margin-left:40px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.ln-container{
+	height:240px;
+	width: 280px;
+	margin:20px;
+	padding: 0;
+	border:none;
+	float:left;
+}
+
+.ln{
+	padding-bottom: 0;
+}
+
+.ln-text{
+	margin:0 auto;
+	padding:0;
+	max-width:100%;
+	max-height:100%;
+
+}
+
+.small{
+	font-size:10px;
+}
+
+.bottom-container{
+	border:none;
+	height:640px;
+	width: 30.2%;
+	margin:20px;
+	padding: 0;
+	float:left;
+}
+
+footer{
+	height: 60px;
+	background:black;
+	color: white;
+	width:100%;
+	float: left;
+}
 
 a{
 	color: rgba(255,255,255,.6);
@@ -150,9 +197,13 @@ a:hover{
   .media{display: inline; height:50px; width:50px; position: relative; bottom:0;}
   #search{display:inline; float: right;position: relative; top:15px;}
   .row-l{width:100%;position: static;}
-  .row-r{width:100%; position:static;}
-  .row-r-2{width:100%; position: static;}
+  .row-r{width:100%; position:static; padding: 0;}
+  .row-r-2{width:100%; position: static; padding: 0;}
   .text{font-size: 24px; width:100%;}
   .text-2{font-size: 20px; width:100%; top:540px;}
   .text-3{font-size: 20px; width:100%; top:750px;}
+  .container-2{top:90px;}
+  .ln-container{width: 100%; margin:0;}
+  .ln{width: 100%;}
+  .bottom-container{width: 100%; margin:0;}
 }
